@@ -16,7 +16,7 @@ const Home = (props) => {
                 <div className="button" onClick={()=>{history.push('/rings')}}>Rings</div>
             </div>
 
-            <div style={{color : 'white', position : 'absolute', bottom : '0px', left : '46%', fontSize : '.6rem' }}>More will be added soon...!!!</div>
+            <div className="more-items-message">More will be added soon...!!!</div>
         </>
     )
 }

@@ -64,3 +64,11 @@
     transform: scale(1.1);
 }
 
+.more-items-message{
+    color: white;
+    position: fixed;
+    bottom: 10rem;
+    right: -30px;
+    font-size: .6rem;
+    transform: rotate(270deg);
+}
