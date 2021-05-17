@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { Switch,Route,Link} from "react-router-dom";
 import './App.css';
+import Cup from './Components/Cup/Cup';
+import CircularRings from './Components/Rings/Rings';
+import Loader from './Components/Loader/Loader';
+import Home from "./Components/Home/Home";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="home-button" onClick={()=>{window.location.href = '/animations'}}></div>
+      <Switch>
+        
+        <Route path="/cup" render={(props)=>{return <Cup {...props}/>}}/>
+        <Route path="/rings" render={(props)=>{return <CircularRings {...props}/>}}/>
+        <Route path="/loader" render={(props)=>{return <Loader {...props}/>}}/>
+
+        <Route path="/" render={(props)=>{return <Home {...props}/>}}/>
+        <Route path="/animations" render={(props)=>{return <Home {...props}/>}}/>
+      </Switch>
+      <Footer/>
+    </>
   );
 }
 
