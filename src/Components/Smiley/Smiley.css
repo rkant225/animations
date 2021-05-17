@@ -1,0 +1,84 @@
+.smiley-container{
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    width: 100%;
+}
+
+.face{
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.eye-1{
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.eye-2{
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.eye-ball-1{
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 1;
+    transition: .5s;
+}
+
+.eye-ball-2{
+    position: absolute;
+    top: 22%;
+    right: 22%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 1;
+    transition: .5s;
+}
+
+.mouth{
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    height: 6rem;
+    width: 15rem;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: tomato;
+}
+
+.tounge{
+    position: absolute;
+    top: 74%;
+    left: 35%;
+    height: 5rem;
+    width: 6rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(175, 53, 32);
+    transition: .5s;
+}
