@@ -1,0 +1,54 @@
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation-name: animate-bg-color;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animate-bg-color {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+span{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: block;
+    cursor: pointer;
+    transition: 1s;
+}
+
+span::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color);
+    border-radius: 50%;
+    transform: scale(.2);
+    transition: 1s;
+
+}
+
+span:hover::before{
+    transition: 0s;
+    transform: scale(.4);
+    box-shadow: 0 0 5px 2px var(--color),
+                0 0 6px 3px var(--color),
+                0 0 7px 4px var(--color),
+                0 0 8px 5px var(--color),
+                0 0 9px 6px var(--color),
+                0 0 10px 7px var(--color),
+                0 0 11px 8px var(--color);
+}

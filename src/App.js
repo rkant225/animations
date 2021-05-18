@@ -6,6 +6,7 @@ import Loader from './Components/Loader/Loader';
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Smiley from "./Components/Smiley/Smiley";
+import Grid from "./Components/Grid/Grid";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/rings" render={(props)=>{return <CircularRings {...props}/>}}/>
         <Route path="/loader" render={(props)=>{return <Loader {...props}/>}}/>
         <Route path="/smiley" render={(props)=>{return <Smiley {...props}/>}}/>
+        <Route path="/grid" render={(props)=>{return <Grid {...props}/>}}/>
 
         <Route path="/" render={(props)=>{return <Home {...props}/>}}/>
         <Route path="/animations" render={(props)=>{return <Home {...props}/>}}/>
