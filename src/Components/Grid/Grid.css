@@ -18,7 +18,7 @@
     }
 }
 
-span{
+.dot-span{
     position: relative;
     height: 40px;
     width: 40px;
@@ -27,7 +27,7 @@ span{
     transition: 1s;
 }
 
-span::before{
+.dot-span::before{
     content: "";
     height: 100%;
     width: 100%;
@@ -41,7 +41,7 @@ span::before{
 
 }
 
-span:hover::before{
+.dot-span:hover::before{
     transition: 0s;
     transform: scale(.4);
     box-shadow: 0 0 5px 2px var(--color),

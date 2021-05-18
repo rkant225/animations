@@ -23,7 +23,7 @@ const Grid = (props) => {
         container.innerHTML = "";
 
         let innerHtmlString = "";
-        const singleSpan = `<span style='--color : ${color};'></span>`;
+        const singleSpan = `<span class='dot-span' style='--color : ${color};'></span>`;
 
         const innerHeight = window.innerHeight;
         const innerWidth = window.innerWidth;

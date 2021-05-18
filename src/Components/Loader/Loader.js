@@ -23,9 +23,9 @@ const Loader = (props) => {
         <div className="loader-page" onClick={changeColor}>
             <div className="loader-container">
                 <div className="loader" title="Color will change in 5 seconds or Click anywhere to change color manualy.">
-                    <div className="before" style={{backgroundImage: `linear-gradient(to top, transparent, ${color})`}}></div>
+                    <div className="before-loader" style={{backgroundImage: `linear-gradient(to top, transparent, ${color})`}}></div>
                     <span></span>
-                    <div className="after" style={{backgroundColor : color, boxShadow : `0 0 10px 0px ${color}, 0 0 20px 0px ${color}, 0 0 30px 0px ${color}, 0 0 40px 0px ${color}, 0 0 50px 0px ${color}, 0 0 60px 0px ${color}, 0 0 70px 10px ${color}`}}></div>
+                    <div className="after-loader" style={{backgroundColor : color, boxShadow : `0 0 10px 0px ${color}, 0 0 20px 0px ${color}, 0 0 30px 0px ${color}, 0 0 40px 0px ${color}, 0 0 50px 0px ${color}, 0 0 60px 0px ${color}, 0 0 70px 10px ${color}`}}></div>
                 </div>
             </div>
         </div>
