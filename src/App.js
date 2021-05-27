@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Smiley from "./Components/Smiley/Smiley";
 import Grid from "./Components/Grid/Grid";
+import NeonButton from "./Components/NeonButton/NeonButton";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/loader" render={(props)=>{return <Loader {...props}/>}}/>
         <Route path="/smiley" render={(props)=>{return <Smiley {...props}/>}}/>
         <Route path="/grid" render={(props)=>{return <Grid {...props}/>}}/>
+        <Route path="/neon-button" render={(props)=>{return <NeonButton {...props}/>}}/>
 
         <Route path="/" render={(props)=>{return <Home {...props}/>}}/>
         <Route path="/animations" render={(props)=>{return <Home {...props}/>}}/>
