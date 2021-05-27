@@ -23,6 +23,15 @@
     text-align: center;
 }
 
+.neon-button-1:hover{
+    transition-delay: .25s;
+    color: #255784;
+    background-color: var(--colorButton1);
+    box-shadow: 0 0 10px var(--colorButton1),
+                0 0 40px var(--colorButton1),
+                0 0 80px var(--colorButton1);
+}
+
 /* Top Border */
 .border-top-1{
     position: absolute;
@@ -211,6 +220,15 @@
     text-align: center;
 }
 
+.neon-button-3:hover{
+    transition-delay: 1.05s;
+    color: #255784;
+    background-color: var(--colorButton3);
+    box-shadow: 0 0 10px var(--colorButton3),
+                0 0 40px var(--colorButton3),
+                0 0 80px var(--colorButton3);
+}
+
 
 /* Top Border */
 .border-top-3{
@@ -227,9 +245,6 @@
     left: 100%;
 }
 
-
-
-
 /* Right Border */
 .border-right-3{
     position: absolute;
@@ -245,9 +260,6 @@
     top: 100%;
     transition-delay: .25s;
 }
-
-
-
 
 /* Bottom Border */
 .border-bottom-3{
@@ -283,6 +295,251 @@
     transition-delay: .75s;
 }
 
+/*================================= Button 4 ===================================*/
+
+.neon-button-4{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: var(--colorButton4);
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    /* transition: .2s ease; */
+    padding: .5rem .5rem .5rem .9rem;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+}
+
+.neon-button-4:hover{
+    transition-delay: 1.05s;
+    color: #255784;
+    background-color: var(--colorButton4);
+    box-shadow: 0 0 10px var(--colorButton4),
+                0 0 40px var(--colorButton4),
+                0 0 80px var(--colorButton4);
+}
+
+
+/* Top Border */
+.border-top-4{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--colorButton4), var(--colorButton4));
+}
+
+.neon-button-4:hover .border-top-4{
+    transition: 1s;
+    left: 100%;
+}
+
+/* Right Border */
+.border-right-4{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(to bottom, var(--colorButton4), var(--colorButton4));
+}
+
+.neon-button-4:hover .border-right-4{
+    transition: 1s;
+    top: -100%;
+    /* transition-delay: .25s; */
+}
+
+/* Bottom Border */
+.border-bottom-4{
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to left, var(--colorButton4), var(--colorButton4));
+}
+
+.neon-button-4:hover .border-bottom-4{
+    transition: 1s;
+    right: 100%;
+    /* transition-delay: .5s; */
+}
+
+
+
+/* Left Border */
+.border-left-4{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(to top, var(--colorButton4), var(--colorButton4));
+}
+
+.neon-button-4:hover .border-left-4{
+    transition: 1s;
+    top: 100%;
+    /* transition-delay: .75s; */
+}
+
+
+/*================================= Button 5 ===================================*/
+
+.neon-button-5{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: var(--colorButton5);
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    /* transition: .2s ease; */
+    padding: .5rem .5rem .5rem .9rem;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+}
+
+.neon-button-5:hover{
+    transition-delay: 1.05s;
+    color: #255784;
+    background-color: var(--colorButton5);
+    box-shadow: 0 0 10px var(--colorButton5),
+                0 0 40px var(--colorButton5),
+                0 0 80px var(--colorButton5);
+}
+
+
+/* Top Border */
+.border-top-5{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--colorButton5), var(--colorButton5));
+}
+
+.neon-button-5:hover .border-top-5{
+    transition: 1s;
+    left: 100%;
+}
+
+
+/* Bottom Border */
+.border-bottom-5{
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to left, var(--colorButton5), var(--colorButton5));
+}
+
+.neon-button-5:hover .border-bottom-5{
+    transition: 1s;
+    right: 100%;
+    /* transition-delay: .5s; */
+}
+
+/*================================= Button 6 ===================================*/
+
+.neon-button-6{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: var(--colorButton6);
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    /* transition: .2s ease; */
+    padding: .5rem .5rem .5rem .9rem;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+}
+
+.neon-button-6:hover{
+    transition-delay: .55s;
+    color: #255784;
+    background-color: var(--colorButton6);
+    box-shadow: 0 0 10px var(--colorButton6),
+                0 0 40px var(--colorButton6),
+                0 0 80px var(--colorButton6);
+}
+
+
+/* Top Border */
+.border-top-6{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--colorButton6), var(--colorButton6));
+}
+
+.neon-button-6:hover .border-top-6{
+    transition: .5s;
+    left: 0%;
+}
+
+/* Right Border */
+.border-right-6{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(to bottom, var(--colorButton6), var(--colorButton6));
+}
+
+.neon-button-6:hover .border-right-6{
+    transition: .5s;
+    top: 0%;
+    /* transition-delay: .25s; */
+}
+
+/* Bottom Border */
+.border-bottom-6{
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to left, var(--colorButton6), var(--colorButton6));
+}
+
+.neon-button-6:hover .border-bottom-6{
+    transition: .5s;
+    right: 0%;
+    /* transition-delay: .5s; */
+}
+
+
+
+/* Left Border */
+.border-left-6{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(to top, var(--colorButton6), var(--colorButton6));
+}
+
+.neon-button-6:hover .border-left-6{
+    transition: .5s;
+    top: 0%;
+    /* transition-delay: .75s; */
+}
+
+
 /*============================ Ussage message ==================================*/
 .neon-button-message{
     position: relative;
@@ -290,66 +547,13 @@
     color: white;
     overflow: hidden;
     padding: .8rem;
-}
-/* Top */
-.neon-button-message-border-top{
-    position: absolute;
-    top: 0;
-    left: -100%;
-    height: 2px;
-    width: 100%;
-    background-image: linear-gradient(to right, transparent, white);
-    animation: animate-neon-button-message-border-top 1s ease 0s infinite;
-}
-@keyframes animate-neon-button-message-border-top {
-    0%{ left: -100%;}
-    100%{ left: 100%;}
+    box-shadow: 0 0 15px 15px #80ff00,
+                0 0 15px 15px yellow,
+                0 0 20px 20px green;
+    animation: animate-border-message-box 5s linear 0s infinite;
 }
 
-/* Right */
-.neon-button-message-border-right{
-    position: absolute;
-    top: -100%;
-    right: 0;
-    height: 100%;
-    width: 2px;
-    background-image: linear-gradient(to bottom, transparent, white);
-    animation: animate-neon-button-message-border-right 1s ease .25s infinite;
-}
-
-@keyframes animate-neon-button-message-border-right {
-    0%{ top: -100%;}
-    100%{ top: 100%;}
-}
-
-/* Bottom */
-.neon-button-message-border-bottom{
-    position: absolute;
-    bottom: 0;
-    right: -100%;
-    height: 2px;
-    width: 100%;
-    background-image: linear-gradient(to left, transparent, white);
-    animation: animate-neon-button-message-border-bottom 1s ease .50s infinite;
-}
-
-@keyframes animate-neon-button-message-border-bottom {
-    0%{ right: -100%;}
-    100%{ right: 100%;}
-}
-
-/* Left */
-.neon-button-message-border-left{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: 100%;
-    width: 2px;
-    background-image: linear-gradient(to top, transparent, white);
-    animation: animate-neon-button-message-border-left 1s ease .75s infinite;
-}
-
-@keyframes animate-neon-button-message-border-left {
-    0%{ top: 100%;}
-    100%{ top: -100%;}
+@keyframes animate-border-message-box {
+    0%{ filter: hue-rotate(0deg);}
+    100%{filter: hue-rotate(360deg);}
 }

@@ -31,12 +31,36 @@ const NeonButton = () => {
                 Neon Button (C)
             </div>
 
+            <div className="neon-button-4" style={{'--colorButton4' : '#ff7d00'}}>
+                <span className="border-top-4"></span>
+                <span className="border-right-4"></span>
+                <span className="border-bottom-4"></span>
+                <span className="border-left-4"></span>
+                Neon Button (D)
+            </div>
+
+            <div className="neon-button-5" style={{'--colorButton5' : '#00b1fb'}}>
+                <span className="border-top-5"></span>
+                <span className="border-right-5"></span>
+                <span className="border-bottom-5"></span>
+                <span className="border-left-5"></span>
+                Neon Button (E)
+            </div>
+
+            <div className="neon-button-6" style={{'--colorButton6' : '#00ffff'}}>
+                <span className="border-top-6"></span>
+                <span className="border-right-6"></span>
+                <span className="border-bottom-6"></span>
+                <span className="border-left-6"></span>
+                Neon Button (F)
+            </div>
+
             <div className="neon-button-message">
                 <span className="neon-button-message-border-top"></span>
                 <span className="neon-button-message-border-right"></span>
                 <span className="neon-button-message-border-bottom"></span>
                 <span className="neon-button-message-border-left"></span>
-                Hover on these buttons to cool CSS effects.
+                Hover on these buttons to see cool CSS effects.
             </div>
         </div>
     )
