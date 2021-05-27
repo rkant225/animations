@@ -6,6 +6,8 @@
     align-items: center;
     height: 97vh;
     width: 100%;
+    overflow: hidden;
+    cursor: none;
 }
 
 .face{
@@ -14,6 +16,10 @@
     width: 20rem;
     border-radius: 50%;
     background-color: yellow;
+    transition: 1s;
+}
+.face:hover{
+    background-image: linear-gradient(to top, transparent, red);
 }
 
 .eye-1{
@@ -71,6 +77,14 @@
     background-color: tomato;
 }
 
+.face:hover .mouth{
+    transition: 1s;
+    top: 65%;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 30%;
+}
+
 .tounge{
     position: absolute;
     top: 74%;
@@ -81,4 +95,19 @@
     border-bottom-right-radius: 50px;
     background-color: rgb(175, 53, 32);
     transition: .5s;
+}
+
+.face:hover .tounge{
+    display: none;
+}
+
+.covid{
+    position: absolute;
+    background-image: url('../../assets//covid.jpg');
+    background-size: cover;
+    height: 3rem;
+    width: 3rem;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
 }

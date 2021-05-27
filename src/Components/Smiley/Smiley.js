@@ -3,6 +3,13 @@ import './Smiley.css'
 
 const Smiley = (props) => {
 
+    const [X, setX] = useState(0);
+    const [Y, setY] = useState(0);
+
+    const updateMousePosition =(e)=>{
+        setX(e.clientX)
+        setY(e.clientY)
+    }
 
     const handleMouseChange=(e)=>{
         // Current cordinate of cursor
@@ -85,7 +92,7 @@ const Smiley = (props) => {
 
 
     return (
-        <div className="smiley-container">
+        <div className="smiley-container" onMouseMove={updateMousePosition}>
 
             <div className="face" onMouseMove={handleMouseChange} onMouseOut={resetEyes}>
                 <div className="eye-1"></div>
@@ -95,6 +102,8 @@ const Smiley = (props) => {
                 <div className="mouth"></div>
                 <div className="tounge"></div>
             </div>
+
+            <div className="covid" style={{marginTop : Y, marginLeft : X}}></div>
         </div>
     )
 }
