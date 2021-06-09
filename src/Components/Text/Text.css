@@ -62,7 +62,7 @@
     font-weight: 800;
     background-image: url('../../assets/woodenBg2.jpg');
     
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     z-index: 1;
                
@@ -96,7 +96,7 @@
     font-weight: 800;
     background-image: url('../../assets/brickBg.jpg');
     background-attachment: fixed;
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     z-index: 1;
                
@@ -130,7 +130,7 @@
     font-weight: 800;
     background-image: url('../../assets/starBg.jpg');
     background-attachment: fixed;
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     z-index: 1;
                

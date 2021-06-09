@@ -11,6 +11,7 @@ import NeonButton from "./Components/NeonButton/NeonButton";
 import Text from "./Components/Text/Text";
 import Tubelight from "./Components/Tubelight/Tubelight";
 import Fan from "./Components/Fan/Fan";
+import Cat from "./Components/Cat/Cat";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/text" render={(props)=>{return <Text {...props}/>}}/>
         <Route path="/tubelight" render={(props)=>{return <Tubelight {...props}/>}}/>
         <Route path="/fan" render={(props)=>{return <Fan {...props}/>}}/>
+        <Route path="/cat" render={(props)=>{return <Cat {...props}/>}}/>
 
         <Route path="/" render={(props)=>{return <Home {...props}/>}}/>
         <Route path="/animations" render={(props)=>{return <Home {...props}/>}}/>
