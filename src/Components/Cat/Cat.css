@@ -241,9 +241,5 @@
 @media (max-width : 600px){
     .cat-container{
         transform: scale(.8);
-    }
-
-    .cat-ear-2{
-        left: 69%;
-    }
+    }    
 }
