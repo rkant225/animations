@@ -1,0 +1,116 @@
+.fan-page-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fan-container{
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motor{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--secondaryColor);
+    border: 10px solid var(--primaryColor);
+    border-radius: 50%;
+
+    animation: spin-motor .5s linear 0s infinite;
+    /* animation-play-state: paused; */
+}
+
+@keyframes spin-motor {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.wing{
+    position: absolute;
+    bottom: 50%;
+    height: 12rem;
+    width: 5rem;
+    background-color: var(--primaryColor);
+    border-radius: 55% 45% 100% 0% / 39% 28% 72% 61%;
+    transform-origin: bottom;
+}
+
+.wing-1{
+    transform: rotate(0deg);
+    
+}
+
+.wing-2{
+    transform: rotate(120deg);
+}
+
+.wing-3{
+    transform: rotate(240deg);
+}
+
+
+.rod{
+    position: absolute;
+    bottom: 12%;
+    height: 13rem;
+    width: 2rem;
+    background-color: var(--secondaryColor);
+    z-index: -1;
+}
+
+.base{
+    position: absolute;
+    bottom: 2%;
+    height: 3rem;
+    width: 15rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--secondaryColor);
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    bottom: 11%;
+    left: 30%;
+    appearance: none;
+    background-color: red;
+    height: 1rem;
+    width: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="checkbox"]:checked{
+    height: .5rem;
+}
+
+
+
+input[type="checkbox"]:checked ~ .motor{
+    animation-play-state: running;
+    
+}
+input[type="checkbox"]:not(:checked) ~ .motor{
+    animation-play-state: paused;
+    
+}
+
+
+
+@media (max-width : 600px){
+    .fan-container{
+        transform: scale(.8);
+    }
+}

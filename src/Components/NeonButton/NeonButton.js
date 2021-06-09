@@ -55,6 +55,10 @@ const NeonButton = () => {
                 Neon Button (F)
             </div>
 
+            <div className="neon-nutton-7" style={{'--colorButton7' : '#34dceb'}}>
+                Glow Button (G)
+            </div>
+
             <div className="neon-button-message">
                 <span className="neon-button-message-border-top"></span>
                 <span className="neon-button-message-border-right"></span>

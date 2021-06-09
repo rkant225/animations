@@ -8,6 +8,9 @@ import Footer from "./Components/Footer/Footer";
 import Smiley from "./Components/Smiley/Smiley";
 import Grid from "./Components/Grid/Grid";
 import NeonButton from "./Components/NeonButton/NeonButton";
+import Text from "./Components/Text/Text";
+import Tubelight from "./Components/Tubelight/Tubelight";
+import Fan from "./Components/Fan/Fan";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="/smiley" render={(props)=>{return <Smiley {...props}/>}}/>
         <Route path="/grid" render={(props)=>{return <Grid {...props}/>}}/>
         <Route path="/neon-button" render={(props)=>{return <NeonButton {...props}/>}}/>
+        <Route path="/text" render={(props)=>{return <Text {...props}/>}}/>
+        <Route path="/tubelight" render={(props)=>{return <Tubelight {...props}/>}}/>
+        <Route path="/fan" render={(props)=>{return <Fan {...props}/>}}/>
 
         <Route path="/" render={(props)=>{return <Home {...props}/>}}/>
         <Route path="/animations" render={(props)=>{return <Home {...props}/>}}/>

@@ -17,6 +17,9 @@ const Home = (props) => {
                 <div className="button" onClick={()=>{history.push('/smiley')}}>Smiley</div>
                 <div className="button" onClick={()=>{history.push('/grid')}}>Grid</div>
                 <div className="button" onClick={()=>{history.push('/neon-button')}}>Neon-Button</div>
+                <div className="button" onClick={()=>{history.push('/text')}}>Text</div>
+                <div className="button" onClick={()=>{history.push('/tubelight')}}>Tubelight</div>
+                <div className="button" onClick={()=>{history.push('/fan')}}>Fan</div>
             </div>
 
             <div className="more-items-message">More will be added soon...!!!</div>

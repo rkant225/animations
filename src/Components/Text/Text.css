@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+.text-page-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Poppins, sans-serif;
+}
+
+.text-card{
+    position: relative;
+    height: 50vh;
+    width: 45%;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.text-1-main{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 800;
+
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--displayColor);
+}
+
+.text-1-secondary{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 800;
+
+    /* color: #03a9f4; */
+    color: var(--displayColor);
+    animation: animate-text-1 6s ease-in-out infinite;
+}
+
+@keyframes animate-text-1 {
+    0%{clip-path: polygon(0 46%, 11% 56%, 23% 63%, 36% 65%, 49% 62%, 64% 57%, 78% 50%, 89% 49%, 100% 58%, 100% 77%, 100% 100%, 0 100%);}
+    50%{clip-path: polygon(0 44%, 13% 37%, 25% 36%, 37% 40%, 50% 53%, 62% 59%, 76% 60%, 89% 56%, 96% 46%, 100% 38%, 100% 100%, 0 100%);}
+    100%{clip-path: polygon(0 46%, 11% 56%, 23% 63%, 36% 65%, 49% 62%, 64% 57%, 78% 50%, 89% 49%, 100% 58%, 100% 77%, 100% 100%, 0 100%);}
+}
+
+/*=============================== Text 2 wooden text =================================*/
+.wooden-text{
+    background-image: url('../../assets/woodenBg2.jpg');
+    
+}
+
+.text-2-main{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: url('../../assets/woodenBg2.jpg');
+    
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+               
+}
+
+
+.text-2-secondary{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow: -5px 5px 20px black,
+                -10px 10px 30px black,
+                -20px 15px 40px black,
+                -25px 20px 50px black;
+}
+/*=============================== Text 3 Brick text =================================*/
+.brick-text{
+    background-image: url('../../assets/brickBg.jpg');
+   
+}
+
+.text-3-main{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: url('../../assets/brickBg.jpg');
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+               
+}
+
+
+.text-3-secondary{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow: -5px 5px 20px black,
+                -10px 10px 30px black,
+                -20px 15px 40px black,
+                -25px 20px 50px black;
+}
+/*=============================== Text 4 Star text =================================*/
+.star-text{
+    background-image: url('../../assets/starBg.jpg');
+   
+}
+
+.text-4-main{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: url('../../assets/starBg.jpg');
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+               
+}
+
+
+.text-4-secondary{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow: -5px 5px 20px black,
+                -10px 10px 30px black,
+                -20px 15px 40px black,
+                -25px 20px 50px black;
+}
+
+
+@media (max-width: 600px){
+    .text-card{
+        width: 100%;
+    }
+
+    .text-2-main, .text-2-secondary{
+        font-size: 2.5rem;
+    }
+    .text-3-main, .text-3-secondary{
+        font-size: 3rem;
+    }
+    .text-4-main, .text-4-secondary{
+        font-size: 2.5rem;
+    }
+    .text-1-main, .text-1-secondary{
+        font-size: 4rem;
+    }
+}
