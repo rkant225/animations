@@ -43,10 +43,10 @@ input[type="number"]{
     height: var(--Height);
     width: var(--Width);
     background-color: sienna;
-    border-top: var(--BorderTop) solid blueviolet;
+    border-top: var(--BorderTop) solid springgreen;
     border-right: var(--BorderRight) solid tomato;
     border-left: var(--BorderLeft) solid yellow;
-    border-bottom: var(--BorderBottom) solid springgreen;
+    border-bottom: var(--BorderBottom) solid blueviolet;
     transform: rotate(var(--Triangle_Rotate_By));
 }
 
