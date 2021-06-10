@@ -4,6 +4,7 @@ import './Shape.css';
 
 const BoxSimple = () => {
     const [BoxHeight_simple , setBoxHeight_simple ] = useState(10);
+    const [Unit, setUnit] = useState('rem');
     const [BoxWidth_simple , setBoxWidth_simple ] = useState(10);
     const [Radius_top_left_simple , setRadius_top_left_simple ] = useState(0);
     const [Radius_top_right_simple , setRadius_top_right_simple ] = useState(0);
@@ -12,7 +13,13 @@ const BoxSimple = () => {
     const [Box_Simple_Rotate_By , setBox_Simple_Rotate_By ] = useState(0);
 
 
-    
+    const toggleUnit=()=>{
+        if(Unit == 'rem'){
+            setUnit('%')
+        } else {
+            setUnit('rem')
+        }
+    }
 
     return (
         <div className="shape-page-container">
@@ -28,10 +35,10 @@ const BoxSimple = () => {
                     {
                         '--BoxHeight_simple' : `${BoxHeight_simple}rem`,
                         '--BoxWidth_simple' : `${BoxWidth_simple}rem`,
-                        '--Radius_top_left_simple' : `${Radius_top_left_simple}rem`,
-                        '--Radius_top_right_simple' : `${Radius_top_right_simple}rem`,
-                        '--Radius_bottom_left_simple' : `${Radius_bottom_left_simple}rem`,
-                        '--Radius_bottom_right_simple' : `${Radius_bottom_right_simple}rem`,
+                        '--Radius_top_left_simple' : `${Radius_top_left_simple}${Unit}`,
+                        '--Radius_top_right_simple' : `${Radius_top_right_simple}${Unit}`,
+                        '--Radius_bottom_left_simple' : `${Radius_bottom_left_simple}${Unit}`,
+                        '--Radius_bottom_right_simple' : `${Radius_bottom_right_simple}${Unit}`,
                         '--Box_Simple_Rotate_By' : `${Box_Simple_Rotate_By}deg`
                     }
                 }>
@@ -44,15 +51,17 @@ const BoxSimple = () => {
                         <br/>
                         width(rem) : <input type="number" value={BoxWidth_simple} onChange={(e)=>{setBoxWidth_simple(e.target.value)}}/>
                         <br/>
-                        Radius_top_left(rem) : <input type="number" value={Radius_top_left_simple} onChange={(e)=>{setRadius_top_left_simple(e.target.value)}}/>
+                        Radius_top_left({Unit}) : <input type="number" value={Radius_top_left_simple} onChange={(e)=>{setRadius_top_left_simple(e.target.value)}}/>
                         <br/>
-                        Radius_top_right(rem) : <input type="number" value={Radius_top_right_simple} onChange={(e)=>{setRadius_top_right_simple(e.target.value)}}/>
+                        Radius_top_right({Unit}) : <input type="number" value={Radius_top_right_simple} onChange={(e)=>{setRadius_top_right_simple(e.target.value)}}/>
                         <br/>
-                        Radius_bottom_left(rem) : <input type="number" value={Radius_bottom_left_simple} onChange={(e)=>{setRadius_bottom_left_simple(e.target.value)}}/>
+                        Radius_bottom_left({Unit}) : <input type="number" value={Radius_bottom_left_simple} onChange={(e)=>{setRadius_bottom_left_simple(e.target.value)}}/>
                         <br/>
-                        Radius_bottom_right(rem) : <input type="number" value={Radius_bottom_right_simple} onChange={(e)=>{setRadius_bottom_right_simple(e.target.value)}}/>
+                        Radius_bottom_right({Unit}) : <input type="number" value={Radius_bottom_right_simple} onChange={(e)=>{setRadius_bottom_right_simple(e.target.value)}}/>
                         <br/>
                         rotate(deg) : <input type="number" value={Box_Simple_Rotate_By} onChange={(e)=>{setBox_Simple_Rotate_By(e.target.value)}}/>
+                        <br/>
+                        <button onClick={()=>{toggleUnit()}}>Change Unit</button>
                 </div>
 
                 <pre className="final-css">
@@ -62,10 +71,10 @@ const BoxSimple = () => {
                             width: ${BoxWidth_simple}rem;
                             background-color: deepskyblue;
                             border: 1px solid white;
-                            border-top-left-radius: ${Radius_top_left_simple}rem;
-                            border-top-right-radius: ${Radius_top_right_simple}rem;
-                            border-bottom-left-radius: ${Radius_bottom_left_simple}rem;
-                            border-bottom-right-radius: ${Radius_bottom_right_simple}rem;
+                            border-top-left-radius: ${Radius_top_left_simple}${Unit};
+                            border-top-right-radius: ${Radius_top_right_simple}${Unit};
+                            border-bottom-left-radius: ${Radius_bottom_left_simple}${Unit};
+                            border-bottom-right-radius: ${Radius_bottom_right_simple}${Unit};
                             transform: rotate(${Box_Simple_Rotate_By});
                         }
                     `}
