@@ -1,0 +1,90 @@
+.shape-page-container{
+    color: white;
+}
+
+.shape-container{
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="number"]{
+    outline: none;
+    width: 3rem;
+}
+
+.shape{
+    margin: 1rem;
+    color: white;
+}
+
+.shape-circle{
+    height: var(--Diameter_Y);
+    width: var(--Diameter_X);
+    background-color: blueviolet;
+    border-radius: 50%;
+    transform: rotate(var(--Circle_Rotate_By));
+}
+
+
+.shape-triangle{
+    height: var(--Height);
+    width: var(--Width);
+    background-color: sienna;
+    border-top: var(--BorderTop) solid blueviolet;
+    border-right: var(--BorderRight) solid tomato;
+    border-left: var(--BorderLeft) solid yellow;
+    border-bottom: var(--BorderBottom) solid springgreen;
+    transform: rotate(var(--Triangle_Rotate_By));
+}
+
+.shape-curvey-box-simple{
+    height: var(--BoxHeight_simple);
+    width: var(--BoxWidth_simple);
+    background-color: deepskyblue;
+    border: 1px solid white;
+    border-top-left-radius: var(--Radius_top_left_simple);
+    border-top-right-radius: var(--Radius_top_right_simple);
+    border-bottom-left-radius: var(--Radius_bottom_left_simple);
+    border-bottom-right-radius: var(--Radius_bottom_right_simple);
+    transform: rotate(var(--Box_Simple_Rotate_By));
+}
+
+.shape-curvey-box-detailed{
+    height: var(--BoxHeight);
+    width: var(--BoxWidth);
+    background-color: chartreuse;
+    border: 1px solid white;
+    border-top-left-radius: var(--HZ_Radius_top_left) var(--VR_Radius_top_left);
+    border-top-right-radius: var(--HZ_Radius_top_right) var(--VR_Radius_top_right);
+    border-bottom-left-radius: var(--HZ_Radius_bottom_left) var(--VR_Radius_bottom_left);
+    border-bottom-right-radius: var(--HZ_Radius_bottom_right) var(--VR_Radius_bottom_right);
+    transform: rotate(var(--Box_Detailed_Rotate_By));
+}
+
+.shape-polygon{
+    height: var(--Height);
+    width: var(--Width);
+    background-color: dodgerblue;
+    clip-path: polygon(var(--CLIP_PATH));
+}
+
+.shape-star-polygon{
+    height: var(--Height);
+    width: var(--Width);
+    background-color: fuchsia;
+    clip-path: polygon(var(--CLIP_PATH));
+}
+
