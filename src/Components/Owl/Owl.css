@@ -1,0 +1,218 @@
+.owl-page-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.owl-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30rem;
+    width: 30rem;
+
+    cursor: pointer;
+}
+
+
+.branch-main{
+    position: absolute;
+    height: 1rem;
+    width: 20rem;
+    background-color: orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 20;
+}
+
+.branch-secondary{
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    height: .8rem;
+    width: 4rem;
+    background-color: orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: rotate(-40deg);
+    transform-origin: left;
+}
+
+.owl-ear-1{
+    position: absolute;
+    top: 17%;
+    left: 39%;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0 3rem 4rem 0rem;
+    border-color: transparent transparent #a69000 transparent;
+    transform: rotate(10deg);
+}
+
+.owl-ear-2{
+    position: absolute;
+    top: 17%;
+    left: 51%;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0 0 4rem 3rem;
+    border-color: transparent transparent #a69000 transparent;
+    transform: rotate(-10deg);
+}
+
+.owl-body{
+    position: absolute;
+    top: 6rem;
+    height: 11rem;
+    width: 8rem;
+    background-color: #c5af4c;
+    border-radius: 5rem;
+}
+
+.owl-eye{
+    position: absolute;
+    top: 18%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.owl-eye-1{
+    left: 8%;
+}
+
+.owl-eye-2{
+    left: 60%;
+}
+
+.owl-eye-ball{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    animation: animate-owl-eye-ball 3s ease-in-out 0s infinite;
+}
+
+@keyframes animate-owl-eye-ball {
+    0%, 100%{
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+    }
+    90%{
+        top: 40%;
+        height: .1rem;
+        width: 1rem;
+    }
+}
+
+.owl-nose{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    height: 0rem;
+    width: 0rem;
+    border-style: solid;
+    border-width: 2rem 1rem 0 1rem;
+    border-color: #a69000 transparent transparent transparent;
+    border-radius: 50%;
+    animation: animate-owl-nose 3s ease-in-out 0s infinite;
+}
+
+@keyframes animate-owl-nose {
+    0%, 100%{
+        box-shadow: none;
+    }
+    90%{
+        box-shadow: 0px 10px 4px 2px #a69000;
+    }
+}
+
+.owl-feather-1{
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    height: 5rem;
+    width: 1.5rem;
+    border-radius: 1rem 0 1rem 0;
+    background-color: #a69000;
+    z-index: 21;
+    transform-origin: top;
+    
+    
+}
+
+.class-animate-owl-feather-1{
+    animation: animate-owl-feather-1 .1s linear 0s infinite alternate;
+}
+
+@keyframes animate-owl-feather-1 {
+    0%, 100%{transform: rotate(0deg);}
+    50%, 100%{transform: rotate(15deg);}
+}
+.class-animate-owl-feather-2{
+    animation: animate-owl-feather-2 .1s linear 0s infinite alternate;
+}
+
+@keyframes animate-owl-feather-2 {
+    0%, 100%{transform: rotate(0deg);}
+    50%, 100%{transform: rotate(-15deg);}
+}
+
+.owl-feather-2{
+    position: absolute;
+    top: 40%;
+    left: 92%;
+    height: 5rem;
+    width: 1.5rem;
+    border-radius: 0rem 1rem 0rem 1rem;
+    background-color: #a69000;
+    transform-origin: top;
+    z-index: 21;
+}
+
+.owl-leg-1{
+    position: absolute;
+    top: 74%;
+    left: 20%;
+    height: .7rem;
+    width: 1.3rem;
+    background-color: yellow;
+    border-radius: 5px;
+    z-index: 21;
+}
+
+.owl-leg-2{
+    position: absolute;
+    top: 74%;
+    left: 62%;
+    height: .7rem;
+    width: 1.3rem;
+    background-color: yellow;
+    border-radius: 5px;
+    z-index: 21;
+}
+
+@media (max-width : 600px){
+    .branch-main{
+        top: 50%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .branch-secondary{
+        top: 0%;
+        left: 80%;
+    }
+}

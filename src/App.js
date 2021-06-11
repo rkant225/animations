@@ -14,6 +14,7 @@ import Fan from "./Components/Fan/Fan";
 import Cat from "./Components/Cat/Cat";
 import Toster from "./Components/Toster/Toster";
 import Shape from "./Components/Shapes/Shape";
+import Owl from "./Components/Owl/Owl";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/cat" render={(props)=>{return <Cat {...props}/>}}/>
         <Route path="/toster" render={(props)=>{return <Toster {...props}/>}}/>
         <Route path="/shapes" render={(props)=>{return <Shape {...props}/>}}/>
+        <Route path="/owl" render={(props)=>{return <Owl {...props}/>}}/>
 
         <Route path="/" render={(props)=>{return <Home {...props}/>}}/>
         <Route path="/animations" render={(props)=>{return <Home {...props}/>}}/>
