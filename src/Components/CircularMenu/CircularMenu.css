@@ -73,9 +73,15 @@
     height: 50px;
     width: 50px;
     background-color: white;
+    color: gray;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: rotate(calc(360deg / -8 * var(--i)));
+    font-size: 1.2rem;
+}
+
+.circular-menu li a:hover{
+    color: blue;
 }
